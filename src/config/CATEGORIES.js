@@ -1,19 +1,19 @@
-import TOURS from "./TOURS";
+import TOURS from './TOURS';
 
 export default [
   {
-    id: 1,
-    title: "Sights",
+    id: Date.now(),
+    title: 'Sights',
     tours: [...TOURS, ...TOURS],
   },
   {
-    id: 2,
-    title: "Tours",
+    id: Date.now(),
+    title: 'Tours',
     tours: [...TOURS, ...TOURS, ...TOURS],
   },
   {
-    id: 3,
-    title: "Advantures",
+    id: Date.now(),
+    title: 'Advantures',
     tours: [...TOURS, ...TOURS, ...TOURS, ...TOURS],
   },
 ];

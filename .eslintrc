@@ -31,7 +31,13 @@
     "react/react-in-jsx-scope": "off",
 
     // Temporaire
-    "import/no-unresolved": "warn"
+    "import/no-unresolved": "warn",
+
+    // only arrow functions for named components
+    // "function-declaration" function Component (props) { ... }
+    // "arrow-function"       const Component = (props) => { ... }
+    // "function-expression"  const Component = function (props) { ... }
+    "react/function-component-definition": ["error", { "namedComponents": "arrow-function" }]
   },
   "settings": {
     "react": {

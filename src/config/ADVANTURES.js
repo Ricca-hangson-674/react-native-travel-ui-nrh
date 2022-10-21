@@ -1,22 +1,27 @@
+const Kayaking = require('../assets/images/advantures/kayaking-con.png');
+const Ballooning = require('../assets/images/advantures/ballooning-icon.png');
+const Snorkeling = require('../assets/images/advantures/snorkeling-icon.png');
+const Hiking = require('../assets/images/advantures/hiking-icon.png');
+
 export default [
   {
-    id: 1,
-    title: "Kayaking",
-    image: require("../assets/images/advantures/kayaking-con.png"),
+    id: Date.now(),
+    title: 'Kayaking',
+    image: Kayaking,
   },
   {
-    id: 2,
-    title: "Ballooning",
-    image: require("../assets/images/advantures/ballooning-icon.png"),
+    id: Date.now(),
+    title: 'Ballooning',
+    image: Ballooning,
   },
   {
-    id: 3,
-    title: "Hiking",
-    image: require("../assets/images/advantures/hiking-icon.png"),
+    id: Date.now(),
+    title: 'Hiking',
+    image: Hiking,
   },
   {
-    id: 4,
-    title: "Snorkeling",
-    image: require("../assets/images/advantures/snorkeling-icon.png"),
+    id: Date.now(),
+    title: 'Snorkeling',
+    image: Snorkeling,
   },
 ];
