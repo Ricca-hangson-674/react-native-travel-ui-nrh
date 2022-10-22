@@ -1,7 +1,7 @@
 import UTILS from 'src/utils/random';
 import TOURS from './TOURS';
 
-const changeId = (tour) => ({ tour, id: UTILS.add(Date.now(), UTILS.random()) });
+const changeId = (tour) => ({ ...tour, id: UTILS.add(Date.now(), UTILS.random()) });
 
 const transform = (tours) => tours.map((t) => changeId(t));
 

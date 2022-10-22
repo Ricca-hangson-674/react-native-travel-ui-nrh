@@ -19,7 +19,9 @@ const avatar = require('src/assets/images/Avatar.png');
 
 const WIDTH = Dimensions.get('screen').width;
 
-const HomeScreen = () => {
+const identifiant = (id) => `${id}_${Math.random()}`;
+
+const HomeScreen = ({ navigation }) => {
   const [activeCategory, setActiveCategory] = useState(0);
 
   return (
@@ -75,7 +77,12 @@ const HomeScreen = () => {
                 borderRadius: SPACING * 2,
                 marginRight: SPACING * 2,
               }}
-              key={tour.id}
+              key={identifiant(tour.id)}
+              onPress={() =>
+                navigation.push('TourDetail', {
+                  tour,
+                })
+              }
             >
               <View
                 style={{
@@ -135,7 +142,7 @@ const HomeScreen = () => {
         >
           {ADVANTURES.map((adventure) => (
             <TouchableOpacity
-              key={adventure}
+              key={adventure.id}
               style={{ marginRight: SPACING * 3, padding: SPACING, alignItems: 'center' }}
             >
               <View style={{ width: SPACING * 3, height: SPACING * 3 }}>
