@@ -10,12 +10,12 @@ import {
 import React, { useState } from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-import SPACING from '../config/SPACING';
-import COLORS from '../config/COLORS';
-import CATEGORIES from '../config/CATEGORIES';
-import ADVANTURES from '../config/ADVANTURES';
+import SPACING from 'src/config/SPACING';
+import COLORS from 'src/config/COLORS';
+import CATEGORIES from 'src/config/CATEGORIES';
+import ADVANTURES from 'src/config/ADVANTURES';
 
-const avatar = require('../assets/images/Avatar.png');
+const avatar = require('src/assets/images/Avatar.png');
 
 const WIDTH = Dimensions.get('screen').width;
 

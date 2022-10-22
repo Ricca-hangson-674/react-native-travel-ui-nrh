@@ -1,19 +1,25 @@
+import UTILS from 'src/utils/random';
 import TOURS from './TOURS';
+
+const changeId = (tour) => ({ tour, id: UTILS.add(Date.now(), UTILS.random()) });
+
+const transform = (tours) => tours.map((t) => changeId(t));
 
 export default [
   {
-    id: Date.now(),
+    id: UTILS.add(Date.now(), UTILS.random()),
     title: 'Sights',
-    tours: [...TOURS, ...TOURS],
+    // tours: [...TOURS, ...TOURS],
+    tours: [...transform(TOURS), ...transform(TOURS)],
   },
   {
-    id: Date.now(),
+    id: UTILS.add(Date.now(), UTILS.random()),
     title: 'Tours',
-    tours: [...TOURS, ...TOURS, ...TOURS],
+    tours: [...transform(TOURS), ...transform(TOURS), ...transform(TOURS)],
   },
   {
-    id: Date.now(),
+    id: UTILS.add(Date.now(), UTILS.random()),
     title: 'Advantures',
-    tours: [...TOURS, ...TOURS, ...TOURS, ...TOURS],
+    tours: [...transform(TOURS), ...transform(TOURS), ...transform(TOURS), ...transform(TOURS)],
   },
 ];

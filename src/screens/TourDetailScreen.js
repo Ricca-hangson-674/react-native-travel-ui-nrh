@@ -11,8 +11,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-import COLORS from '../config/COLORS';
-import SPACING from '../config/SPACING';
+import COLORS from 'src/config/COLORS';
+import SPACING from 'src/config/SPACING';
 
 const TourDetailScreen = ({ tour }) => (
   <>

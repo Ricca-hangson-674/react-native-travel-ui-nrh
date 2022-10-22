@@ -1,26 +1,28 @@
-const Kayaking = require('../assets/images/advantures/kayaking-con.png');
-const Ballooning = require('../assets/images/advantures/ballooning-icon.png');
-const Snorkeling = require('../assets/images/advantures/snorkeling-icon.png');
-const Hiking = require('../assets/images/advantures/hiking-icon.png');
+import UTILS from 'src/utils/random';
+
+const Kayaking = require('src/assets/images/advantures/kayaking-con.png');
+const Ballooning = require('src/assets/images/advantures/ballooning-icon.png');
+const Snorkeling = require('src/assets/images/advantures/snorkeling-icon.png');
+const Hiking = require('src/assets/images/advantures/hiking-icon.png');
 
 export default [
   {
-    id: Date.now(),
+    id: UTILS.add(Date.now(), UTILS.random()),
     title: 'Kayaking',
     image: Kayaking,
   },
   {
-    id: Date.now(),
+    id: UTILS.add(Date.now(), UTILS.random()),
     title: 'Ballooning',
     image: Ballooning,
   },
   {
-    id: Date.now(),
+    id: UTILS.add(Date.now(), UTILS.random()),
     title: 'Hiking',
     image: Hiking,
   },
   {
-    id: Date.now(),
+    id: UTILS.add(Date.now(), UTILS.random()),
     title: 'Snorkeling',
     image: Snorkeling,
   },

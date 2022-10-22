@@ -31,6 +31,7 @@
     "react/react-in-jsx-scope": "off",
 
     // Temporaire
+    // "import/no-unresolved": ["warn", { "ignore": ["\\src*"] }],
     "import/no-unresolved": "warn",
 
     // only arrow functions for named components
@@ -50,12 +51,8 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       },
       "alias": {
-        "map": [
-          ["@src", "./src/"],
-          ["@assets", "./src/assets/"],
-          ["@screens", "./src/screens/"]
-        ],
-        "extensions": [".tsx", ".ts", ".jsx", ".js"]
+        "map": [["src", "./src"]],
+        "extensions": [".ios.js", ".android.js", ".js", ".jsx", ".ts", ".tsx", ".json"]
       }
     }
   }
