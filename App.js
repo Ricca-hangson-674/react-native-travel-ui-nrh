@@ -1,5 +1,4 @@
-// import HomeScreen from '@screens/HomeScreen';
-import TourDetailScreen from '@screens/TourDetailScreen';
+import TourDetailScreen from 'src/screens/TourDetailScreen';
 import TOURS from './src/config/TOURS';
 
 // const App = () => <HomeScreen />;
